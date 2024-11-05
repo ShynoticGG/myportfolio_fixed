@@ -14,6 +14,11 @@
 
 .home__img {
   margin-bottom: 1.5rem;
+  border-radius: 35%;
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  -ms-border-radius: 35%;
+  -o-border-radius: 35%;
 }
 
 .home__name {

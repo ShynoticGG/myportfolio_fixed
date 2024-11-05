@@ -2,6 +2,13 @@
   grid-template-columns: 3fr 9fr;
   column-gap: 1.875rem;
 }
+.about__img {
+  border-radius: 35%;
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  -ms-border-radius: 35%;
+  -o-border-radius: 35%;
+}
 
 .about__data {
   padding: 1.875rem;
@@ -133,7 +140,12 @@
 
   .about__img {
     justify-self: center;
-  }
+    border-radius: 35%;
+    -webkit-border-radius: 35%;
+    -moz-border-radius: 35%;
+    -ms-border-radius: 35%;
+    -o-border-radius: 35%;
+}
 
   .about__box {
     flex-direction: column;
