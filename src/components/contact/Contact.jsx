@@ -28,12 +28,7 @@ const Contact = (props) => {
     };
 
     emailjs
-      .send(
-        "service_dvhrnjs",
-        "template_2hvfeb4",
-        data,
-        "49tzSpnGDEu1C3v8S"
-      )
+      .send("service_dvhrnjs", "template_2hvfeb4", data, "49tzSpnGDEu1C3v8S")
       .then(
         (_result) => {
           setLoading(false);
@@ -91,6 +86,8 @@ const Contact = (props) => {
 
           <div className="contact__form-div contact__form-area">
             <textarea
+              name=""
+              id=""
               cols="30"
               rows="10"
               className="contact__form-input"
@@ -104,7 +101,6 @@ const Contact = (props) => {
           </button>
         </form>
       </div>
-
       <br />
       <br />
       <footer className="footer">
@@ -155,7 +151,7 @@ const Contact = (props) => {
               <a href="#contact">Contact</a>
             </div>
           </div>
-        </div>
+        </div>{" "}
         <hr />
         <div className="footer-bottom">
           <p>&copy; 2024 Skina Adonai. All rights reserved.</p>
