@@ -29,7 +29,7 @@ const Contact = (props) => {
 
     emailjs
       .send(
-        "service_dvhrnjs", // langsung isi tanpa .env
+        "service_dvhrnjs",
         "template_2hvfeb4",
         data,
         "49tzSpnGDEu1C3v8S"
