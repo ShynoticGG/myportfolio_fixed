@@ -27,13 +27,12 @@ const Contact = (props) => {
       message,
     };
 
-    emailjs
-      .send(
-        "service_dvhrnjs",
-        "template_2hvfeb4",
-        data,
-        "49tzSpnGDEu1C3v8S"
-      )
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,     // service ID dari .env
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,    // template ID dari .env
+      e.target,
+      process.env.REACT_APP_EMAILJS_PUBLIC_API      // public key dari .env
+    )
       .then(
         (_result) => {
           setLoading(false);
