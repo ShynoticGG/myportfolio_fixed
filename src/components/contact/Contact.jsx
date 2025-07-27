@@ -29,10 +29,10 @@ const Contact = (props) => {
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        "service_tjaqfti", // langsung isi tanpa .env
+        "template_2hvfeb4",
         data,
-        process.env.REACT_APP_EMAILJS_PUBLIC_API
+        "49tzSpnGDEu1C3v8S"
       )
       .then(
         (_result) => {
@@ -91,8 +91,6 @@ const Contact = (props) => {
 
           <div className="contact__form-div contact__form-area">
             <textarea
-              name=""
-              id=""
               cols="30"
               rows="10"
               className="contact__form-input"
@@ -106,6 +104,7 @@ const Contact = (props) => {
           </button>
         </form>
       </div>
+
       <br />
       <br />
       <footer className="footer">
@@ -156,7 +155,7 @@ const Contact = (props) => {
               <a href="#contact">Contact</a>
             </div>
           </div>
-        </div>{" "}
+        </div>
         <hr />
         <div className="footer-bottom">
           <p>&copy; 2024 Skina Adonai. All rights reserved.</p>
